@@ -19,12 +19,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap"
       rel="stylesheet"
     />
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- swipper css -->
     <link rel="stylesheet" href="src/swiper-bundle.min.css" />
+    <style>
+      /* Tambahan CSS untuk horizontal scroll */
+      .pricing__container {
+        overflow-x: auto;
+      }
+    </style>
     <title>Document</title>
   </head>
   <body>
@@ -162,16 +168,16 @@
               </li>
               <li>
                 <a
-                  href="#service"
+                  href="#testimoni"
                   class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300"
-                  >Service</a
+                  >Testimoni</a
                 >
               </li>
               <li>
                 <a
-                  href="#testimonial"
+                  href="#mentor"
                   class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300"
-                  >Testimoni</a
+                  >Team Mentor</a
                 >
               </li>
               <li>
@@ -205,47 +211,37 @@
     <!-- hero section-->
     <section
       id="home"
-      class="hero bg-grey py-12 xl:pt-12 xl:pb-0 overflow-hidden"
+      class="hero bg-white py-12 xl:pt-12 xl:pb-0 overflow-hidden"
     >
-      <div class="container mx-auto h-full">
+      <div class="container mx-auto h-full my-2">
         <!-- text and image -->
         <div
           class="flex flex-col xl:flex-row items-center justify-between h-full"
         >
           <!-- text -->
           <div class="hero__text xl:w-[48%] text-center xl:text-left">
-            <!-- badge -->
-            <div
-              class="flex items-center bg-white py-[10px] px-[20px] w-max gap-x-2 mb-[26px] rounded-full mx-auto xl:mx-0"
-            >
-              <!-- badge icon -->
-              <i class="ri-code-s-slash-line text-2xl text-accent"></i>
-              <div
-                class="uppercase text-base font-medium text-[#9ab4b7] tracking-[2.24px]"
-              >
-                Code Is Art
-              </div>
-            </div>
             <!-- title -->
-            <h1 class="text-2xl font-extrabold mb-6">
+            <h1 class="text-3xl text-teal-700 font-bold mb-6 font-poppins">
               Learn, develop, and write your story in lines of code.
             </h1>
             <!-- desc -->
-            <p class="mb-[42px] md:max-w-xl">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
-              deleniti dignissimos consectetur, voluptatibus iusto, laborum
-              ipsum magnam voluptates corrupti pariatur tenetur
+            <p class="mb-[42px] md:max-w-xl text-base">
+              Dengan +5 tahun pengalaman dalam memberikan pendidikan digital
+              berkualitas, Codelearn menjadi mitra terpercaya Anda dalam
+              mencapai tujuan belajar.
             </p>
             <!-- btn -->
             <a href=" https://wa.me/+6285156710872">
-              <button class="btn btn-lg btn-accent mx-auto xl:mx-0">
+              <button
+                class="btn btn-lg bg-white border border-teal-500 hover:bg-teal-500 text-black hover:text-white mx-auto xl:mx-0"
+              >
                 Contact Us
               </button>
             </a>
           </div>
           <!-- image -->
           <div class="hero__img hidden xl:flex max-w-[814px] self-end">
-            <img src="assets/img/hero/Group 7.png" alt="" />
+            <img src="assets2/coding-studio-main-image-1.webp" alt="" />
           </div>
         </div>
       </div>
@@ -253,784 +249,1263 @@
     <!-- end hero -->
 
     <!-- stats -->
-    <section id="stats" class="stats section mt-8 xl:mt-16">
-      <div class="container mx-auto">
-        <!-- wrapper -->
-        <div class="flex flex-col xl:flex-row gap-y-6 justify-between">
-          <!-- itemns -->
-          <div
-            class="stats__item flex-1 xl:border-r flex flex-col items-center"
-          >
+    <!-- Container for demo purpose -->
+    <div class="container my-24 mx-auto md:px-6" id="stats">
+      <!-- Section: Design Block -->
+      <section class="mb-32 text-center">
+        <h2 class="mb-20 text-2xl font-bold stats__item">
+          Mengapa Harus memilih Kami?
+        </h2>
+
+        <div class="grid lg:grid-cols-3 lg:gap-x-12">
+          <div class="mb-16 lg:mb-0 stats__item">
             <div
-              class="text-4xl xl:text-[64px] font-semibold text-accent-tertiary xl:mb-2"
+              class="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
             >
-              +52743
-            </div>
-            <div>Member Aktif</div>
-          </div>
-
-          <!-- itemns -->
-          <div
-            class="stats__item flex-1 xl:border-r flex flex-col items-center"
-          >
-            <div
-              class="text-4xl xl:text-[64px] font-semibold text-accent-tertiary xl:mb-2"
-            >
-              +53
-            </div>
-            <div>Mentor Professional</div>
-          </div>
-          <!-- itemns -->
-          <div class="stats__item flex-1 flex flex-col items-center">
-            <div
-              class="text-4xl xl:text-[64px] font-semibold text-accent-tertiary xl:mb-2"
-            >
-              +7
-            </div>
-            <div>Tahun Pengalaman</div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end stats -->
-
-    <!-- service -->
-    <section id="service" class="services">
-      <!-- bg -->
-      <div
-        class="bg-accent bg-services bg-cover bg-no-repeat max-w-[1466px] mx-4 xl:mx-auto rounded-[20px] xl:pt-[70px] px-6 xl:px-0 relative h-[368px] flex items-center xl:items-start -z-10"
-      >
-        <div class="container mx-auto">
-          <!-- text -->
-          <div
-            class="services__top flex items-center flex-col xl:flex-row xl:mb-[60px]"
-          >
-            <h2
-              class="h2 text-white flex-1 mb-4 xl:mb-0 text-center xl:text-left"
-            >
-              Our best service for your solution
-            </h2>
-            <p
-              class="text-white flex-1 text-center xl:text-left max-w-2xl xl:max-w-none"
-            >
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
-              delectus, ad odit eum voluptatum, quis labore vel quam ipsum
-              aliquam hic quidem optio consectetur. Lorem ipsum dolor sit amet,
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!--grid container  -->
-      <div class="container mx-auto mt-8 xl:-mt-[144px]">
-        <!-- grid -->
-        <div class="grid xl:grid-cols-4 gap-5 px-8 xl:px-0">
-          <!-- grid item -->
-          <div
-            class="services__item bg-white p-[30px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center"
-          >
-            <!-- grid item icom -->
-            <div class="mb-[15px]">
-              <i class="ri-award-fill text-5xl text-accent"></i>
-            </div>
-            <!-- grid item title -->
-            <h3 class="h3 mb-[10px]">Certification</h3>
-            <!-- grid item description -->
-            <p class="font-light leading-normal max-w-[300px]">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem
-            </p>
-          </div>
-          <!-- grid item -->
-          <div
-            class="services__item bg-white p-[30px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center"
-          >
-            <!-- grid item icom -->
-            <div class="mb-[15px]">
-              <i class="ri-time-fill text-5xl text-accent"></i>
-            </div>
-            <!-- grid item title -->
-            <h3 class="h3 mb-[10px]">Time and Place Flexibility</h3>
-            <!-- grid item description -->
-            <p class="font-light leading-normal max-w-[300px]">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem
-            </p>
-          </div>
-          <!-- grid item -->
-          <div
-            class="services__item bg-white p-[30px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center"
-          >
-            <!-- grid item icom -->
-            <div class="mb-[15px]">
-              <i class="ri-community-line text-accent text-5xl"></i>
-            </div>
-            <!-- grid item title -->
-            <h3 class="h3 mb-[10px]">Connection with Industry</h3>
-            <!-- grid item description -->
-            <p class="font-light leading-normal max-w-[300px]">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem
-            </p>
-          </div>
-          <!-- grid item -->
-          <div
-            class="services__item bg-white p-[30px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center"
-          >
-            <!-- grid item icom -->
-            <div class="mb-[15px]">
-              <i class="ri-user-follow-fill text-5xl text-accent"></i>
-            </div>
-            <!-- grid item title -->
-            <h3 class="h3 mb-[10px]">Mentoring</h3>
-            <!-- grid item description -->
-            <p class="font-light leading-normal max-w-[300px]">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end service -->
-
-    <!-- testimonials -->
-    <section
-      id="testimonial"
-      class="testimonial bg-testimonials bg-cover bg-right bg-no-repeat py-12 xl:min-h-[595px] xl:py-0"
-    >
-      <div class="testimonial__container container mx-auto">
-        <div class="text-center pt-4">
-          <p class="h2 text-black text-3xl xl:text-5xl font-bold">
-            Testimoni Alumni
-          </p>
-        </div>
-        <div class="flex flex-col items-center gap-x-14 xl:flex-row">
-          <!-- img -->
-          <div class="hidden xl:flex mt-10">
-            <img src="assets/img/hero/Group_8-removebg-preview.png" alt="" />
-          </div>
-          <!-- slider -->
-          <div class="max-w-[98%] xl:max-w-[720px]">
-            <!-- Slider main container -->
-            <div class="swiper h-[400px] rounded-xl bg-white shadow-2xl">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slide 1 -->
-                <div class="swiper-slide">
-                  <div class="h-full flex flex-col justify-center items-start">
-                    <div class="max-w-[680px] mx-auto text-center xl:text-left">
-                      <div
-                        class="py-8 px-8 max-w-sm mx-auto bg-white space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6"
-                      >
-                        <img
-                          class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0"
-                          src="assets/img/hero/Screenshot_3.png"
-                          alt="Woman's Face"
-                        />
-                        <div class="text-center space-y-2 sm:text-left">
-                          <div class="space-y-0.5">
-                            <p class="text-lg text-black font-semibold">
-                              muhammad Rafii
-                            </p>
-                            <p class="text-slate-500 font-medium">
-                              Fullstack Developer
-                            </p>
-                          </div>
-
-                          <a href=""
-                            ><i class="ri-twitter-fill text-lg text-accent"></i
-                          ></a>
-                          <a href=""
-                            ><i
-                              class="ri-instagram-fill text-lg text-accent"
-                            ></i
-                          ></a>
-                          <a href="">
-                            <i
-                              class="ri-linkedin-box-fill text-lg text-accent"
-                            ></i
-                          ></a>
-                          <a href=""
-                            ><i
-                              class="ri-facebook-circle-fill text-lg text-accent"
-                            ></i
-                          ></a>
-                        </div>
-                      </div>
-                      <p
-                        class="font-light relative text-[15px] xl:text-[22px] text-[#4c5354] leading-[190%] text-center xl:text-left xl:mb-7"
-                      >
-                        <!-- message -->
-                        <span class="mx-2"
-                          >"Kursus ini memberikan fondasi yang kuat dalam
-                          pemrograman dan membuka pintu bagi saya untuk
-                          menjelajahi berbagai bidang dalam dunia
-                          teknologi"</span
-                        >
-                      </p>
-                    </div>
-                  </div>
+              <div class="flex justify-center">
+                <div
+                  class="-mt-8 inline-block rounded-full bg-teal-400 p-4 text-primary shadow-md"
+                >
+                  <i class="ri-team-fill text-5xl text-white"></i>
                 </div>
-                <!-- slide 2 -->
-                <div class="swiper-slide">
-                  <div class="h-full flex flex-col justify-center items-start">
-                    <div class="max-w-[680px] mx-auto text-center xl:text-left">
-                      <div
-                        class="py-8 px-8 max-w-sm mx-auto bg-white space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6"
-                      >
-                        <img
-                          class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0"
-                          src="assets/img/hero/raihan_arya_syahputra_TUVAGGj.jpg"
-                          alt="Woman's Face"
-                        />
-                        <div class="text-center space-y-2 sm:text-left">
-                          <div class="space-y-0.5">
-                            <p class="text-lg text-black font-semibold">
-                              Raihan Arya Syahputra
-                            </p>
-                            <p class="text-slate-500 font-medium">
-                              UI/UX Designer
-                            </p>
-                          </div>
-                          <a href=""
-                            ><i class="ri-twitter-fill text-lg text-accent"></i
-                          ></a>
-                          <a href=""
-                            ><i
-                              class="ri-instagram-fill text-lg text-accent"
-                            ></i
-                          ></a>
-                          <a href="">
-                            <i
-                              class="ri-linkedin-box-fill text-lg text-accent"
-                            ></i
-                          ></a>
-                          <a href=""
-                            ><i
-                              class="ri-facebook-circle-fill text-lg text-accent"
-                            ></i
-                          ></a>
-                        </div>
-                      </div>
-                      <p
-                        class="font-light relative text-[15px] xl:text-[22px] text-[#4c5354] leading-[190%] text-center xl:text-left xl:mb-7"
-                      >
-                        <!-- message -->
-                        <span class="mx-2"
-                          >"Saya sangat terkesan dengan cara penyampaian materi
-                          di kursus ini"</span
-                        >
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- slide 3 -->
-                <div class="swiper-slide">
-                  <div class="h-full flex flex-col justify-center items-start">
-                    <div class="max-w-[680px] mx-auto text-center xl:text-left">
-                      <div
-                        class="py-8 px-8 max-w-sm mx-auto bg-white space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6"
-                      >
-                        <img
-                          class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0"
-                          src="assets/img/hero/yesi.jpg"
-                          alt="Woman's Face"
-                        />
-                        <div class="text-center space-y-2 sm:text-left">
-                          <div class="space-y-0.5">
-                            <p class="text-lg text-black font-semibold">
-                              Yesica Putri Fernando
-                            </p>
-                            <p class="text-slate-500 font-medium">
-                              Security Engineer
-                            </p>
-                          </div>
-                          <a href=""
-                            ><i class="ri-twitter-fill text-lg text-accent"></i
-                          ></a>
-                          <a href=""
-                            ><i
-                              class="ri-instagram-fill text-lg text-accent"
-                            ></i
-                          ></a>
-                          <a href="">
-                            <i
-                              class="ri-linkedin-box-fill text-lg text-accent"
-                            ></i
-                          ></a>
-                          <a href=""
-                            ><i
-                              class="ri-facebook-circle-fill text-lg text-accent"
-                            ></i
-                          ></a>
-                        </div>
-                      </div>
-                      <p
-                        class="font-light relative text-[15px] xl:text-[22px] text-[#4c5354] leading-[190%] text-center xl:text-left xl:mb-7"
-                      >
-                        <!-- message -->
-                        <span class="mx-2"
-                          >"Kursus koding ini memberikan wawasan mendalam
-                          tentang teknologi terkini dan mempersiapkan saya untuk
-                          tantangan dunia nyata dalam industri teknologi."</span
-                        >
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- slide 4 -->
-                <div class="swiper-slide">
-                  <div class="h-full flex flex-col justify-center items-start">
-                    <div class="max-w-[680px] mx-auto text-center xl:text-left">
-                      <div
-                        class="py-8 px-8 max-w-sm mx-auto bg-white space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6"
-                      >
-                        <img
-                          class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0"
-                          src="assets/img/hero/iejat.jpg"
-                          alt="Woman's Face"
-                        />
-                        <div class="text-center space-y-2 sm:text-left">
-                          <div class="space-y-0.5">
-                            <p class="text-lg text-black font-semibold">
-                              Izzaturamadhan
-                            </p>
-                            <p class="text-slate-500 font-medium">
-                              Software Engineer
-                            </p>
-                          </div>
-                          <a href=""
-                            ><i class="ri-twitter-fill text-lg text-accent"></i
-                          ></a>
-                          <a href=""
-                            ><i
-                              class="ri-instagram-fill text-lg text-accent"
-                            ></i
-                          ></a>
-                          <a href="">
-                            <i
-                              class="ri-linkedin-box-fill text-lg text-accent"
-                            ></i
-                          ></a>
-                          <a href=""
-                            ><i
-                              class="ri-facebook-circle-fill text-lg text-accent"
-                            ></i
-                          ></a>
-                        </div>
-                      </div>
-                      <p
-                        class="font-light relative text-[15px] xl:text-[22px] text-[#4c5354] leading-[190%] text-center xl:text-left xl:mb-7"
-                      >
-                        <!-- message -->
-                        <span class="mx-2"
-                          >"Materi yang disajikan sangat terstruktur, dan saya
-                          suka bagaimana kursus ini mengajarkan konsep-konsep
-                          kritis dengan pendekatan praktis."</span
-                        >
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- Navigation arrows -->
-                <div class="swiper-button-next"></div>
-
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
+              </div>
+              <div class="p-6">
+                <h3
+                  class="mb-4 text-2xl font-bold text-primary dark:text-primary-400"
+                >
+                  +4000
+                </h3>
+                <h5 class="mb-4 text-lg font-medium">Member Aktif</h5>
               </div>
             </div>
           </div>
+
+          <div class="mb-16 lg:mb-0 stats__item">
+            <div
+              class="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+            >
+              <div class="flex justify-center">
+                <div
+                  class="-mt-8 inline-block rounded-full bg-teal-400 p-4 text-primary shadow-md"
+                >
+                  <i class="ri-user-star-fill text-5xl text-white"></i>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3
+                  class="mb-4 text-2xl font-bold text-primary dark:text-primary-400"
+                >
+                  +6
+                </h3>
+                <h5 class="mb-4 text-lg font-medium">Mentor professional</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="stats__item">
+            <div
+              class="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+            >
+              <div class="flex justify-center">
+                <div
+                  class="-mt-8 inline-block rounded-full bg-teal-400 p-4 text-primary shadow-md"
+                >
+                  <i class="ri-calendar-check-line text-5xl text-white"></i>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3
+                  class="mb-4 text-2xl font-bold text-primary dark:text-primary-400"
+                >
+                  +5
+                </h3>
+                <h5 class="mb-4 text-lg font-medium">Tahun Pengalaman</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Design Block -->
+    </div>
+    <!-- Container for demo purpose -->
+    <!-- end stats -->
+
+    <!-- service -->
+    <!-- <section class="mx-auto container">
+      <div class="p-8">
+        <div class="flex felx-col items-center justify-center">
+          <span
+            class="rounded-full bg-indigo-500 px-2 py-1 text-white uppercase text-sm"
+          >
+            Insight
+          </span>
+        </div>
+        <h1 class="text-4xl font-medium text-gray-700 text-center mt-6">
+          Full-Funnel Social Analytics
+        </h1>
+        <p class="text-center mt-6 text-lg font-light text-gray-500">
+          The time is now for it to be okay to be great. For being a bright
+          color. For standing out.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3">
+        <div class="p-8">
+          <div
+            class="bg-indigo-100 rounded-full w-16 h-16 flex justify-center items-center text-indigo-500 shadow-2xl"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <h2 class="uppercase mt-6 text-indigo-500 font-medium mb-3">
+            Social conversations
+          </h2>
+          <p class="font-light text-sm text-gray-500 mb-3">
+            We get insulted by others, lose trust for those others. We get back
+            stabbed by friends. It becomes harder for us to give others a hand.
+          </p>
+          <a
+            class="text-indigo-500 flex items-center hover:text-indigo-600"
+            href="/"
+          >
+            More about us icon
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="p-8">
+          <div
+            class="bg-green-100 rounded-full w-16 h-16 flex justify-center items-center text-yellow-400 shadow-2xl"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <h2 class="uppercase mt-6 text-yellow-400 font-medium mb-3">
+            Social conversations
+          </h2>
+          <p class="font-light text-sm text-gray-500 mb-3">
+            We get insulted by others, lose trust for those others. We get back
+            stabbed by friends. It becomes harder for us to give others a hand.
+          </p>
+          <a
+            class="text-yellow-400 flex items-center hover:text-green-600"
+            href="/"
+          >
+            More about us icon
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="p-8">
+          <div
+            class="bg-red-100 rounded-full w-16 h-16 flex justify-center items-center text-red-500 shadow-2xl"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <h2 class="uppercase mt-6 text-red-500 font-medium mb-3">
+            Social conversations
+          </h2>
+          <p class="font-light text-sm text-gray-500 mb-3">
+            We get insulted by others, lose trust for those others. We get back
+            stabbed by friends. It becomes harder for us to give others a hand.
+          </p>
+          <a class="text-red-500 flex items-center hover:text-red-600" href="/">
+            More about us icon
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- end service -->
+
+    <!-- testimonials -->
+    <section class="bg-white" id="testimoni">
+      <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <h2
+          class="text-center text-2xl font-bold tracking-tight text-gray-900 testimonial__container"
+        >
+          Terimakasih Member CodeLearn
+        </h2>
+
+        <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
+          <blockquote
+            class="rounded-xl bg-gray-50 p-6 shadow-sm border sm:p-8 testimonial__container"
+          >
+            <div class="flex items-center gap-4">
+              <img
+                alt="Man"
+                src="assets2/pp.jpg"
+                class="h-14 w-14 rounded-full object-cover"
+              />
+
+              <div>
+                <div class="flex justify-center gap-0.5 text-yellow-400">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                </div>
+
+                <p class="mt-0.5 text-lg font-medium text-gray-900">
+                  Elgan Christyawan
+                </p>
+              </div>
+            </div>
+
+            <p class="mt-4 text-gray-700">
+              Materinya bagus dan terstruktur jadinya mudah dipahami, diajarin
+              metode best practice sama tips and trick yang bermanfaat juga
+              dikursusnya.
+            </p>
+          </blockquote>
+
+          <blockquote
+            class="rounded-xl border bg-gray-50 p-6 shadow-sm sm:p-8 testimonial__container"
+          >
+            <div class="flex items-center gap-4">
+              <img
+                alt="Man"
+                src="assets2/pp.jpg"
+                class="h-14 w-14 rounded-full object-cover"
+              />
+
+              <div>
+                <div class="flex justify-center gap-0.5 text-yellow-400">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                </div>
+
+                <p class="mt-0.5 text-lg font-medium text-gray-900">
+                  Kristianto
+                </p>
+              </div>
+            </div>
+
+            <p class="mt-4 text-gray-700">
+              Belakangan ini memang lagi cari course yang ngebahas tentang
+              laravel, ga sengaja ketemu course dari coding studio , baca
+              silabus nya cukup menarik, akhirnya memutuskan untuk beli.
+              penyampaiannya enak, ga terlalu kaku, pastinya mudah dimengerti.
+            </p>
+          </blockquote>
+
+          <blockquote
+            class="rounded-xl border bg-gray-50 p-6 shadow-sm sm:p-8 testimonial__container"
+          >
+            <div class="flex items-center gap-4">
+              <img
+                alt="Man"
+                src="assets2/pp.jpg"
+                class="h-14 w-14 rounded-full object-cover"
+              />
+
+              <div>
+                <div class="flex justify-center gap-0.5 text-yellow-400">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                </div>
+
+                <p class="mt-0.5 text-lg font-medium text-gray-900">Robertus</p>
+              </div>
+            </div>
+
+            <p class="mt-4 text-gray-700">
+              Kelas online yang paling recommended karena materi yang
+              disampaikan sangat detail dan jelas sehingga sangat cocok untuk
+              pemula
+            </p>
+          </blockquote>
+          <blockquote
+            class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8 testimonial__container"
+          >
+            <div class="flex items-center gap-4">
+              <img
+                alt="Man"
+                src="assets2/pp.jpg"
+                class="h-14 w-14 rounded-full object-cover"
+              />
+
+              <div>
+                <div class="flex justify-center gap-0.5 text-yellow-400">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                </div>
+
+                <p class="mt-0.5 text-lg font-medium text-gray-900">Heni</p>
+              </div>
+            </div>
+
+            <p class="mt-4 text-gray-700">
+              Alhamdulillah, Luaaaarrr Biasaaa Penyampaian Materi nya Mantap,
+              semakin di share lg ilmu nya ke kami sampai ke akar2 nya ya kak.
+              hehee… semoga Berkah Selalu. Aamiiin
+            </p>
+          </blockquote>
+          <blockquote
+            class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8 testimonial__container"
+          >
+            <div class="flex items-center gap-4">
+              <img
+                alt="Man"
+                src="assets2/pp.jpg"
+                class="h-14 w-14 rounded-full object-cover"
+              />
+
+              <div>
+                <div class="flex justify-center gap-0.5 text-yellow-400">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                </div>
+
+                <p class="mt-0.5 text-lg font-medium text-gray-900">Andik</p>
+              </div>
+            </div>
+
+            <p class="mt-4 text-gray-700">
+              Penyampaian materinya cukup bagus dan mudah dimengerti. Apalagi
+              ditambah saya sudah biasa pakai database msssql. Terima kasih
+              Coding Studio. Semoga kedepan makin maju.
+            </p>
+          </blockquote>
+          <blockquote
+            class="rounded-xl border bg-gray-50 p-6 shadow-sm sm:p-8 testimonial__container"
+          >
+            <div class="flex items-center gap-4">
+              <img
+                alt="Man"
+                src="assets2/pp.jpg"
+                class="h-14 w-14 rounded-full object-cover"
+              />
+
+              <div>
+                <div class="flex justify-center gap-0.5 text-yellow-400">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                </div>
+
+                <p class="mt-0.5 text-lg font-medium text-gray-900">
+                  M Abdul Aziz
+                </p>
+              </div>
+            </div>
+
+            <p class="mt-4 text-gray-700">
+              Alhamdulillah learning di coding Studio mengupgrade ilmu saya
+              tentang fundamental jaringan dengan modul yang simple dan mudah
+              dicerna .. sukses buat tim coding studio..
+            </p>
+          </blockquote>
         </div>
       </div>
     </section>
     <!-- end testimonials -->
 
     <!-- Pricing -->
-    <section id="Class" class="relative p-10 min-h-screen overflow-hidden">
-      <div class="container mx-auto">
-        <!-- gray diagonal thingy -->
+    <section class="container mx-auto">
+      <h1 class="text-2xl text-black font-bold text-center py-3 pricing__blog">
+        Rekomendasi Kursus di Coding Studio Flexy
+      </h1>
+      <div class="flex flex-wrap justify-around">
         <div
-          class="absolute inset-y-0 -right-72 bg-accent-tertiary transform rotate-45 w-[300%]"
-        ></div>
-        <!-- headlines -->
-        <div class="relative text-center mb-12 space-y-3">
-          <h2 class="text-3xl xl:text-5xl font-bold text-black pricing__title">
-            Rekomendasi Kursus di CodeLearn
-          </h2>
-        </div>
-        <!-- pricing boxes -->
-        <div class="relative grid grid-cols-1 gap-4 xl:grid-cols-4">
-          <div
-            class="bg-white p-8 border-t-4 border-blue-400 rounded-2xl shadow-xl pricing__blog"
-          >
-            <!-- pricing header -->
-            <div class="mb-10 space-y-2">
-              <h2 class="text-2xl xl:text-3xl text-blue-900">
-                Fullstack Developer
-              </h2>
-              <h3 class="text-sm uppercase text-gray-400">For Everybody</h3>
+          class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/8 px-2 pricing__blog"
+        >
+          <div class="bg-white p-8 rounded-xl shadow-lg border my-3">
+            <!-- Konten elemen -->
+            <img src="assets2/Website-FE-1.webp" class="rounded-xl" alt="" />
+            <div
+              class="bg-pink-500 text-white p-2 my-2 mt-4 w-40 text-center rounded-2xl"
+            >
+              <h1 class="text-white">Untuk Pemula</h1>
             </div>
-            <!-- pricing list -->
-            <div>
-              <ul class="space-y-2 text-gray-600">
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-              </ul>
+            <h2 class="xl:text-xl font-semibold mb-4 text-teal-600 text-base">
+              Fundamental Front End Web​
+            </h2>
+            <p class="line-through text-red-700 text-xl">Rp.125.000</p>
+            <p class="text-teal-700 text-3xl font-bold">Rp.80.000</p>
+            <div class="py-10 text-center">
+              <a href="web-development.html">
+                <button
+                  class="text-base font-semibold bg-white hover:bg-pink-600 border border-pink-600 text-pink-600 hover:text-white py-2 w-full px-4 rounded-lg"
+                >
+                  Lihat Kursus
+                </button>
+              </a>
             </div>
-            <!-- pricing numbers -->
-            <div class="mt-10">
-              <span class="text-4xl text-black">Rp. 125.000</span>
-            </div>
-            <!-- button -->
-            <a href="web-development.html">
-              <button
-                class="mt-3 py-4 px-6 w-full border-2 border-blue-300 hover:bg-blue-400 hover:text-white"
-              >
-                Buy
-              </button>
-            </a>
-          </div>
-          <div
-            class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-blue-400 pricing__blog"
-          >
-            <!-- pricing header -->
-            <div class="mb-10 space-y-2">
-              <h2 class="text-2xl xl:text-3xl text-blue-900">
-                UI and UX Design
-              </h2>
-              <h3 class="text-sm uppercase text-gray-400">For Everybody</h3>
-            </div>
-            <!-- pricing list -->
-            <div>
-              <ul class="space-y-2 text-gray-600">
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-              </ul>
-            </div>
-            <!-- pricing numbers -->
-            <div class="mt-10">
-              <span class="text-4xl text-black">Rp. 125.000</span>
-            </div>
-            <!-- button -->
-            <a href="web-development.html">
-              <button
-                class="mt-3 py-4 px-6 w-full border-2 border-blue-300 hover:bg-blue-400 hover:text-white"
-              >
-                Buy
-              </button>
-            </a>
-          </div>
-          <div
-            class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-blue-400 pricing__blog"
-          >
-            <!-- pricing header -->
-            <div class="mb-10 space-y-2">
-              <h2 class="text-2xl xl:text-3xl text-blue-900">
-                Fundamental Cyber Security
-              </h2>
-              <h3 class="text-sm uppercase text-gray-400">For Everybody</h3>
-            </div>
-            <!-- pricing list -->
-            <div>
-              <ul class="space-y-2 text-gray-600">
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-              </ul>
-            </div>
-            <!-- pricing numbers -->
-            <div class="mt-10">
-              <span class="text-4xl text-black">Rp. 125.000</span>
-            </div>
-            <!-- button -->
-            <a href="web-development.html">
-              <button
-                class="mt-3 py-4 px-6 w-full border-2 border-blue-300 hover:bg-blue-400 hover:text-white"
-              >
-                Buy
-              </button>
-            </a>
-          </div>
-          <div
-            class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-blue-400 pricing__blog"
-          >
-            <!-- pricing header -->
-            <div class="mb-10 space-y-2">
-              <h2 class="text-2xl xl:text-3xl text-blue-900">
-                3D Animantion With Blender
-              </h2>
-              <h3 class="text-sm uppercase text-gray-400">For Everybody</h3>
-            </div>
-            <!-- pricing list -->
-            <div>
-              <ul class="space-y-2 text-gray-600">
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-              </ul>
-            </div>
-            <!-- pricing numbers -->
-            <div class="mt-10">
-              <span class="text-4xl text-black">Rp. 125.000</span>
-            </div>
-            <!-- button -->
-            <a href="web-development.html">
-              <button
-                class="mt-3 py-4 px-6 w-full border-2 border-blue-300 hover:bg-blue-400 hover:text-white"
-              >
-                Buy
-              </button>
-            </a>
-          </div>
-          <div
-            class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-blue-400 pricing__blog"
-          >
-            <!-- pricing header -->
-            <div class="mb-10 space-y-2">
-              <h2 class="text-2xl xl:text-3xl text-blue-900">
-                3D Animantion With Blender
-              </h2>
-              <h3 class="text-sm uppercase text-gray-400">For Everybody</h3>
-            </div>
-            <!-- pricing list -->
-            <div>
-              <ul class="space-y-2 text-gray-600">
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-              </ul>
-            </div>
-            <!-- pricing numbers -->
-            <div class="mt-10">
-              <span class="text-4xl text-black">Rp. 125.000</span>
-            </div>
-            <!-- button -->
-            <a href="web-development.html">
-              <button
-                class="mt-3 py-4 px-6 w-full border-2 border-blue-300 hover:bg-blue-400 hover:text-white"
-              >
-                Buy
-              </button>
-            </a>
-          </div>
-          <div
-            class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-blue-400 pricing__blog"
-          >
-            <!-- pricing header -->
-            <div class="mb-10 space-y-2">
-              <h2 class="text-2xl xl:text-3xl text-blue-900">
-                3D Animantion With Blender
-              </h2>
-              <h3 class="text-sm uppercase text-gray-400">For Everybody</h3>
-            </div>
-            <!-- pricing list -->
-            <div>
-              <ul class="space-y-2 text-gray-600">
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-              </ul>
-            </div>
-            <!-- pricing numbers -->
-            <div class="mt-10">
-              <span class="text-4xl text-black">Rp. 125.000</span>
-            </div>
-            <!-- button -->
-            <a href="web-development.html">
-              <button
-                class="mt-3 py-4 px-6 w-full border-2 border-blue-300 hover:bg-blue-400 hover:text-white"
-              >
-                Buy
-              </button>
-            </a>
-          </div>
-          <div
-            class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-blue-400 pricing__blog"
-          >
-            <!-- pricing header -->
-            <div class="mb-10 space-y-2">
-              <h2 class="text-2xl xl:text-3xl text-blue-900">
-                3D Animantion With Blender
-              </h2>
-              <h3 class="text-sm uppercase text-gray-400">For Everybody</h3>
-            </div>
-            <!-- pricing list -->
-            <div>
-              <ul class="space-y-2 text-gray-600">
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-                <li>
-                  <i class="ri-check-line text-2xl text-green-500"></i>data
-                  random is here
-                </li>
-              </ul>
-            </div>
-            <!-- pricing numbers -->
-            <div class="mt-10">
-              <span class="text-4xl text-black">Rp. 125.000</span>
-            </div>
-            <!-- button -->
-            <a href="web-development.html">
-              <button
-                class="mt-3 py-4 px-6 w-full border-2 border-blue-300 hover:bg-blue-400 hover:text-white"
-              >
-                Buy
-              </button>
-            </a>
           </div>
         </div>
+        <div
+          class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/8 px-2 pricing__blog"
+        >
+          <div class="bg-white p-8 rounded-xl shadow-lg border my-3">
+            <!-- Konten elemen -->
+            <img
+              src="assets2/Website-Laravel-9-1-1.webp"
+              class="rounded-xl"
+              alt=""
+            />
+            <div
+              class="bg-pink-500 text-white p-2 my-2 mt-4 w-40 text-center rounded-2xl"
+            >
+              <h1 class="text-white">Untuk Pemula</h1>
+            </div>
+            <h2 class="xl:text-xl font-semibold mb-4 text-teal-600 text-base">
+              Membuat Website Dengan Laravel 9
+            </h2>
+            <p class="line-through text-red-700 text-xl">Rp.125.000</p>
+            <p class="text-teal-700 text-3xl font-bold">Rp.80.000</p>
+            <div class="py-10 text-center">
+              <a href="laravel.html">
+                <button
+                  class="text-base font-semibold bg-white hover:bg-pink-600 border border-pink-600 text-pink-600 hover:text-white py-2 w-full px-4 rounded-lg"
+                >
+                  Lihat Kursus
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/8 px-2 pricing__blog"
+        >
+          <div class="bg-white p-8 rounded-xl shadow-lg border my-3">
+            <!-- Konten elemen -->
+            <img
+              src="assets2/Website-Game-3D-1.webp"
+              class="rounded-xl"
+              alt=""
+            />
+            <div
+              class="bg-pink-500 text-white p-2 my-2 mt-4 w-40 text-center rounded-2xl"
+            >
+              <h1 class="text-white">Untuk Pemula</h1>
+            </div>
+            <h2 class="xl:text-xl font-semibold mb-4 text-teal-600 text-base">
+              Membuat Game 3D bagi Pemula
+            </h2>
+            <p class="line-through text-red-700 text-xl">Rp.125.000</p>
+            <p class="text-teal-700 text-3xl font-bold">Rp.80.000</p>
+            <div class="py-10 text-center">
+              <a href="game3d.html">
+                <button
+                  class="text-base font-semibold bg-white hover:bg-pink-600 border border-pink-600 text-pink-600 hover:text-white py-2 w-full px-4 rounded-lg"
+                >
+                  Lihat Kursus
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/8 px-2 pricing__blog"
+        >
+          <div class="bg-white p-8 rounded-xl shadow-lg border my-3">
+            <!-- Konten elemen -->
+            <img
+              src="assets2/Website-Excel-Intermediate-1.jpg"
+              class="rounded-xl"
+              alt=""
+            />
+            <div
+              class="bg-pink-500 text-white p-2 my-2 mt-4 w-40 text-center rounded-2xl"
+            >
+              <h1 class="text-white">Untuk Pemula</h1>
+            </div>
+            <h2 class="xl:text-xl font-semibold mb-4 text-teal-600 text-base">
+              Menguasai Excel Intermediate
+            </h2>
+            <p class="line-through text-red-700 text-xl">Rp.125.000</p>
+            <p class="text-teal-700 text-3xl font-bold">Rp.80.000</p>
+            <div class="py-10 text-center">
+              <a href="excel.html">
+                <button
+                  class="text-base font-semibold bg-white hover:bg-pink-600 border border-pink-600 text-pink-600 hover:text-white py-2 w-full px-4 rounded-lg"
+                >
+                  Lihat Kursus
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/8 px-2 pricing__blog"
+        >
+          <div class="bg-white p-8 rounded-xl shadow-lg border my-3">
+            <!-- Konten elemen -->
+            <img
+              src="assets2/Website-Fundamental-Cyber-Security-1-1.jpg"
+              class="rounded-xl"
+              alt=""
+            />
+            <div
+              class="bg-pink-500 text-white p-2 my-2 mt-4 w-40 text-center rounded-2xl"
+            >
+              <h1 class="text-white">Untuk Pemula</h1>
+            </div>
+            <h2 class="xl:text-xl font-semibold mb-4 text-teal-600 text-base">
+              Fundamental Cyber Security
+            </h2>
+            <p class="line-through text-red-700 text-xl">Rp.125.000</p>
+            <p class="text-teal-700 text-3xl font-bold">Rp.80.000</p>
+            <div class="py-10 text-center">
+              <a href="cybersecurity.html">
+                <button
+                  class="text-base font-semibold bg-white hover:bg-pink-600 border border-pink-600 text-pink-600 hover:text-white py-2 w-full px-4 rounded-lg"
+                >
+                  Lihat Kursus
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tambahkan elemen lainnya dengan kelas yang sama seperti di atas -->
       </div>
     </section>
+
     <!--end Pricing -->
+
+    <!-- teams -->
+    <!-- Container for demo purpose -->
+    <div class="container my-24 mx-auto md:px-6" id="mentor">
+      <!-- Section: Design Block -->
+      <section class="mb-32 text-center">
+        <h2 class="mb-32 text-2xl font-bold pricing__blog">
+          Kepoin
+          <u class="text-primary dark:text-primary-400">Mentor Team </u>kita yuk
+        </h2>
+
+        <div class="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
+          <div class="mb-24 md:mb-0 pricing__blog">
+            <div
+              class="block h-full rounded-lg bg-gray-200 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+            >
+              <div class="flex justify-center">
+                <div class="flex justify-center -mt-[75px]">
+                  <img
+                    src="assets/img/hero/iejat.jpg"
+                    class="mx-auto rounded-full shadow-lg dark:shadow-black/20 w-[150px]"
+                    alt="Avatar"
+                  />
+                </div>
+              </div>
+              <div class="p-6">
+                <h5 class="mb-4 text-lg font-bold">Izzaturamadhan</h5>
+                <p class="mb-6">Penetration Tester</p>
+                <ul class="mx-auto flex list-inside justify-center">
+                  <a href="#!" class="px-2">
+                    <!-- GitHub -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      class="h-4 w-4 text-primary dark:text-primary-400"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#!" class="px-2">
+                    <!-- Twitter -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      class="h-4 w-4 text-primary dark:text-primary-400"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#!" class="px-2">
+                    <!-- Linkedin -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      class="h-3.5 w-3.5 text-primary dark:text-primary-400"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                      />
+                    </svg>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-24 md:mb-0 pricing__blog">
+            <div
+              class="block h-full rounded-lg bg-gray-200 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+            >
+              <div class="flex justify-center">
+                <div class="flex justify-center -mt-[75px]">
+                  <img
+                    src="assets/img/hero/yesi.jpg"
+                    class="mx-auto rounded-full shadow-lg dark:shadow-black/20 w-[150px]"
+                    alt="Avatar"
+                  />
+                </div>
+              </div>
+              <div class="p-6">
+                <h5 class="mb-4 text-lg font-bold">Yesica Putri Fernando</h5>
+                <p class="mb-6">Software Engineer</p>
+                <ul class="mx-auto flex list-inside justify-center">
+                  <a href="#!" class="px-2">
+                    <!-- Facebook -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 text-primary dark:text-primary-400"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#!" class="px-2">
+                    <!-- Twitter -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      class="h-4 w-4 text-primary dark:text-primary-400"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#!" class="px-2">
+                    <!-- Linkedin -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      class="h-3.5 w-3.5 text-primary dark:text-primary-400"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                      />
+                    </svg>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="pricing__blog">
+            <div
+              class="block h-full rounded-lg bg-gray-200 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+            >
+              <div class="flex justify-center">
+                <div class="flex justify-center -mt-[75px]">
+                  <img
+                    src="assets/img/hero/Screenshot_3.png"
+                    class="mx-auto rounded-full shadow-lg dark:shadow-black/20 w-[150px]"
+                    alt="Avatar"
+                  />
+                </div>
+              </div>
+              <div class="p-6">
+                <h5 class="mb-4 text-lg font-bold">Muhammad Rafii</h5>
+                <p class="mb-6">Software Engineer</p>
+                <ul class="mx-auto flex list-inside justify-center">
+                  <a href="#!" class="px-2">
+                    <!-- Dribbble -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      class="h-4 w-4 text-primary dark:text-primary-400"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M12 0c-6.628 0-12 5.373-12 12s5.372 12 12 12 12-5.373 12-12-5.372-12-12-12zm9.885 11.441c-2.575-.422-4.943-.445-7.103-.073-.244-.563-.497-1.125-.767-1.68 2.31-1 4.165-2.358 5.548-4.082 1.35 1.594 2.197 3.619 2.322 5.835zm-3.842-7.282c-1.205 1.554-2.868 2.783-4.986 3.68-1.016-1.861-2.178-3.676-3.488-5.438.779-.197 1.591-.314 2.431-.314 2.275 0 4.368.779 6.043 2.072zm-10.516-.993c1.331 1.742 2.511 3.538 3.537 5.381-2.43.715-5.331 1.082-8.684 1.105.692-2.835 2.601-5.193 5.147-6.486zm-5.44 8.834l.013-.256c3.849-.005 7.169-.448 9.95-1.322.233.475.456.952.67 1.432-3.38 1.057-6.165 3.222-8.337 6.48-1.432-1.719-2.296-3.927-2.296-6.334zm3.829 7.81c1.969-3.088 4.482-5.098 7.598-6.027.928 2.42 1.609 4.91 2.043 7.46-3.349 1.291-6.953.666-9.641-1.433zm11.586.43c-.438-2.353-1.08-4.653-1.92-6.897 1.876-.265 3.94-.196 6.199.196-.437 2.786-2.028 5.192-4.279 6.701z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#!" class="px-2">
+                    <!-- Linkedin -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      class="h-3.5 w-3.5 text-primary dark:text-primary-400"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#!" class="px-2">
+                    <!-- Instagram -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      class="h-4 w-4 text-primary dark:text-primary-400"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                      />
+                    </svg>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Design Block -->
+    </div>
+    <div class="container my-24 mx-auto md:px-6">
+      <!-- Section: Design Block -->
+      <section class="mb-32 text-center">
+        <div class="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
+          <div class="mb-24 md:mb-0 pricing__blog">
+            <div
+              class="block h-full rounded-lg bg-gray-200 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+            >
+              <div class="flex justify-center">
+                <div class="flex justify-center -mt-[75px]">
+                  <img
+                    src="assets2/wiraa.jpg"
+                    class="mx-auto rounded-full shadow-lg dark:shadow-black/20 w-[150px]"
+                    alt="Avatar"
+                  />
+                </div>
+              </div>
+              <div class="p-6">
+                <h5 class="mb-4 text-lg font-bold">Wira Putra N</h5>
+                <p class="mb-6">Fullstack Developer</p>
+                <ul class="mx-auto flex list-inside justify-center">
+                  <a href="#!" class="px-2">
+                    <!-- GitHub -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      class="h-4 w-4 text-primary dark:text-primary-400"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#!" class="px-2">
+                    <!-- Twitter -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      class="h-4 w-4 text-primary dark:text-primary-400"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#!" class="px-2">
+                    <!-- Linkedin -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      class="h-3.5 w-3.5 text-primary dark:text-primary-400"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                      />
+                    </svg>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-24 md:mb-0 pricing__blog">
+            <div
+              class="block h-full rounded-lg bg-gray-200 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+            >
+              <div class="flex justify-center">
+                <div class="flex justify-center -mt-[75px]">
+                  <img
+                    src="assets2/irhamkw2.jpg"
+                    class="mx-auto rounded-full shadow-lg dark:shadow-black/20 w-[150px]"
+                    alt="Avatar"
+                  />
+                </div>
+              </div>
+              <div class="p-6">
+                <h5 class="mb-4 text-lg font-bold">Muhammad Irham R.S</h5>
+                <p class="mb-6">Data Analyst</p>
+                <ul class="mx-auto flex list-inside justify-center">
+                  <a href="#!" class="px-2">
+                    <!-- Facebook -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 text-primary dark:text-primary-400"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#!" class="px-2">
+                    <!-- Twitter -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      class="h-4 w-4 text-primary dark:text-primary-400"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#!" class="px-2">
+                    <!-- Linkedin -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      class="h-3.5 w-3.5 text-primary dark:text-primary-400"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                      />
+                    </svg>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="pricing__blog">
+            <div
+              class="block h-full rounded-lg bg-gray-200 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+            >
+              <div class="flex justify-center">
+                <div class="flex justify-center -mt-[75px]">
+                  <img
+                    src="assets/img/hero/raihan_arya_syahputra_TUVAGGj.jpg"
+                    class="mx-auto rounded-full shadow-lg dark:shadow-black/20 w-[150px]"
+                    alt="Avatar"
+                  />
+                </div>
+              </div>
+              <div class="p-6">
+                <h5 class="mb-4 text-lg font-bold">Raihan Arya Syahputra</h5>
+                <p class="mb-6">Software Engineer</p>
+                <ul class="mx-auto flex list-inside justify-center">
+                  <a href="#!" class="px-2">
+                    <!-- Dribbble -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      class="h-4 w-4 text-primary dark:text-primary-400"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M12 0c-6.628 0-12 5.373-12 12s5.372 12 12 12 12-5.373 12-12-5.372-12-12-12zm9.885 11.441c-2.575-.422-4.943-.445-7.103-.073-.244-.563-.497-1.125-.767-1.68 2.31-1 4.165-2.358 5.548-4.082 1.35 1.594 2.197 3.619 2.322 5.835zm-3.842-7.282c-1.205 1.554-2.868 2.783-4.986 3.68-1.016-1.861-2.178-3.676-3.488-5.438.779-.197 1.591-.314 2.431-.314 2.275 0 4.368.779 6.043 2.072zm-10.516-.993c1.331 1.742 2.511 3.538 3.537 5.381-2.43.715-5.331 1.082-8.684 1.105.692-2.835 2.601-5.193 5.147-6.486zm-5.44 8.834l.013-.256c3.849-.005 7.169-.448 9.95-1.322.233.475.456.952.67 1.432-3.38 1.057-6.165 3.222-8.337 6.48-1.432-1.719-2.296-3.927-2.296-6.334zm3.829 7.81c1.969-3.088 4.482-5.098 7.598-6.027.928 2.42 1.609 4.91 2.043 7.46-3.349 1.291-6.953.666-9.641-1.433zm11.586.43c-.438-2.353-1.08-4.653-1.92-6.897 1.876-.265 3.94-.196 6.199.196-.437 2.786-2.028 5.192-4.279 6.701z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#!" class="px-2">
+                    <!-- Linkedin -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      class="h-3.5 w-3.5 text-primary dark:text-primary-400"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#!" class="px-2">
+                    <!-- Instagram -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      class="h-4 w-4 text-primary dark:text-primary-400"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                      />
+                    </svg>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Design Block -->
+    </div>
+    <!-- Container for demo purpose -->
+    <!-- /teams -->
+
     <!-- blog -->
-    <section id="blog" class="blog">
+    <section id="blog" class="blog mx-auto container">
       <div class="container mx-auto">
-        <h2
-          class="blog__title text-3xl xl:text-5xl font-bold mb-[50px] text-center"
-        >
+        <h2 class="blog__title text-2xl font-bold mb-[50px] text-center">
           Seputar teknologi
         </h2>
         <!-- blog post-->
@@ -1039,7 +1514,7 @@
         >
           <!-- post 1-->
           <div
-            class="blog__post max-w-[420px] shadow-lg rounded-[10px] overflow-hidden cursor-pointer group"
+            class="blog__post max-w-[420px] shadow-none xl:shadow-md rounded-[10px] overflow-hidden cursor-pointer group border"
           >
             <!-- img -->
             <div class="relative overflow-hidden">
@@ -1066,7 +1541,7 @@
               <!-- desc -->
               <p class="font-light">
                 Dengan perkembangan zaman, setiap orang dituntut untuk dapat
-                mengikuti kemajuan ilmu pengetahuan. Hal ini juga...
+                mengikuti kemajuan ilmu pengetahuan...
                 <a
                   href="atikel/artikel.html"
                   class="italic underline text-[#4c5354]"
@@ -1077,7 +1552,7 @@
           </div>
           <!-- post 2-->
           <div
-            class="blog__post max-w-[420px] shadow-lg rounded-[10px] overflow-hidden cursor-pointer group"
+            class="blog__post max-w-[420px] shadow-none xl:shadow-md rounded-[10px] overflow-hidden cursor-pointer group border"
           >
             <!-- img -->
             <div class="relative overflow-hidden">
@@ -1114,7 +1589,7 @@
           </div>
           <!-- post 3-->
           <div
-            class="blog__post max-w-[420px] shadow-lg rounded-[10px] overflow-hidden cursor-pointer group"
+            class="blog__post max-w-[420px] shadow-none xl:shadow-md rounded-[10px] overflow-hidden cursor-pointer group border"
           >
             <!-- img -->
             <div class="relative overflow-hidden">
@@ -1139,8 +1614,7 @@
               <!-- desc -->
               <p class="font-light">
                 Autentikasi adalah proses verifikasi terhadap data-data tertentu
-                agar dapat menjamin keamanan suatu akun. Dengan sistem kerja
-                yang mutakhir, autentikasi sekarang ini...
+                agar dapat menjamin keamanan suatu akun. Dengan sistem kerja...
                 <a
                   href="atikel/artikel3.html"
                   class="italic underline text-[#4c5354]"
@@ -1151,7 +1625,7 @@
           </div>
           <!-- post 3-->
           <div
-            class="blog__post max-w-[420px] shadow-lg rounded-[10px] overflow-hidden cursor-pointer group"
+            class="blog__post max-w-[420px] shadow-none xl:shadow-md rounded-[10px] overflow-hidden cursor-pointer group border"
           >
             <!-- img -->
             <div class="relative overflow-hidden">
@@ -1187,7 +1661,7 @@
           </div>
           <!-- post 3-->
           <div
-            class="blog__post max-w-[420px] shadow-lg rounded-[10px] overflow-hidden cursor-pointer group"
+            class="blog__post max-w-[420px] shadow-none xl:shadow-md rounded-[10px] overflow-hidden cursor-pointer group border"
           >
             <!-- img -->
             <div class="relative overflow-hidden">
@@ -1208,9 +1682,7 @@
               <!-- date -->
               <div class="mb-4">Jan 2, 2020</div>
               <!-- title -->
-              <h4 class="h4 mb-[10px]">
-                Mengenal Bahasa Pemrograman Swift untuk Aplikasi Apple
-              </h4>
+              <h4 class="h4 mb-[10px]">Mengenal Bahasa Pemrograman Swift</h4>
               <!-- desc -->
               <p class="font-light">
                 Melihat perkembangan teknologi saat ini membuat semakin banyak
@@ -1225,7 +1697,7 @@
           </div>
           <!-- post 3-->
           <div
-            class="blog__post max-w-[420px] shadow-lg rounded-[10px] overflow-hidden cursor-pointer group"
+            class="blog__post max-w-[420px] shadow-none xl:shadow-md rounded-[10px] overflow-hidden cursor-pointer group border"
           >
             <!-- img -->
             <div class="relative overflow-hidden">
@@ -1261,7 +1733,7 @@
           </div>
           <!-- post 3-->
           <div
-            class="blog__post max-w-[420px] shadow-lg rounded-[10px] overflow-hidden cursor-pointer group"
+            class="blog__post max-w-[420px] shadow-none xl:shadow-md rounded-[10px] overflow-hidden cursor-pointer group border"
           >
             <!-- img -->
             <div class="relative overflow-hidden">
@@ -1297,7 +1769,7 @@
           </div>
           <!-- post 3-->
           <div
-            class="blog__post max-w-[420px] shadow-lg rounded-[10px] overflow-hidden cursor-pointer group"
+            class="blog__post max-w-[420px] shadow-none xl:shadow-md rounded-[10px] overflow-hidden cursor-pointer group border"
           >
             <!-- img -->
             <div class="relative overflow-hidden">
@@ -1339,9 +1811,7 @@
     <!-- brands -->
     <section class="brands section">
       <div class="container mx-auto">
-        <h2
-          class="brands__title text-3xl xl:text-5xl font-bold mb-[50px] text-center"
-        >
+        <h2 class="brands__title text-2xl font-bold mb-[50px] text-center">
           Di dukung oleh:
         </h2>
         <div
