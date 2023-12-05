@@ -220,13 +220,12 @@
                   </div>
                 </div>
               </div>
-            </li>
-         
+            </li>        
               <script>
                 var openmodal = document.querySelectorAll(".modal-open");
                 for (var i = 0; i < openmodal.length; i++) {
                   openmodal[i].addEventListener("click", function (event) {
-                    event.preventDefault();
+                    event.preventDefault(); 
                     toggleModal();
                   });
                 }
@@ -284,54 +283,18 @@
           <h1
             class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl"
           >
-            Introduction to Tailwind CSS
+            Final Quiz TailwindCSS
            </h1>
-          <p class="text-sm md:text-base font-normal text-gray-600">
+          <p class="text-sm md:text-base font-normal text-gray-600 my-3">
             Published 19 February 2023
           </p>
+          <hr class="border-b-2 border-gray-400 mb-8" />
         </div>
-
-        <!--Post Content-->
-
-        <!--Lead Para-->
-       
-        <!-- 
-        <p class="py-6">Example code block:</p>
-        <pre
-          class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4"
-        >
-          <code class="break-words whitespace-pre-wrap">
-  &lt;header class="site-header outer"&gt;
-  &lt;div class="inner"&gt;
-  {{&gt; "site-nav"}}
-  &lt;/div&gt;
-  &lt;/header&gt;
-          </code>
-        </pre> -->
-
-        <!--/ Post Content-->
+        <a href="../quizztailwind/index.html"><button class="border p-4 rounded-md font-bold bg-teal-400 text-white">Mulai Quiz</button></a>
       </div>
 
      
       <!--Divider-->
-      <hr class="border-b-2 border-gray-400 mb-8 mx-4" />
-
-     
-      <!-- video -->
-      <div class="container mx-auto px-4">
-        <div class="bg-gray-200 rounded-lg overflow-hidden video-container">
-          <iframe
-            class="video-iframe"
-            src="https://www.youtube.com/embed/Qxjy56Rp0Gk"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-      <!--Divider-->
-      <hr class="border-b-2 border-gray-400 mb-8 mx-4" />
-
 
     <script>
       /* Progress bar */

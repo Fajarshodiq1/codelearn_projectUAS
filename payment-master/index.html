@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="tailwindcss-colors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Payment Page</title>
+</head>
+<body class="font-sans">
+    
+    <!-- start: Payment -->
+    <section class="payment-section">
+        <div class="container">
+            <div class="payment-wrapper">
+                <div class="payment-left">
+                    <div class="payment-header">
+                        <div class="payment-header-icon"><i class="ri-code-fill"></i></i></div>
+                        <div class="payment-header-title">CodeLearn Order</div>
+                        
+                    </div>
+                    <div class="payment-content">
+                        <div class="payment-body">
+                            <div class="payment-plan">
+                                
+                                <div class="payment-plan-info">
+                                    <div class="payment-plan-info-name">Fundamental Front-End Web</div>
+                                    <div class="payment-plan-info-price">Rp. 80.000</div>
+                                </div>
+                            </div>
+                            <div class="payment-summary">
+                                <div class="payment-summary-item">
+                                    <div class="payment-summary-name">Diskon</div>
+                                    <div class="payment-summary-price">-</div>
+                                </div>
+                                <div class="payment-summary-divider"></div>
+                                <div class="payment-summary-item payment-summary-total">
+                                    <div class="payment-summary-name">Total</div>
+                                    <div class="payment-summary-price">Rp.80.000</div>
+                                </div>
+                                <div class="payment-summary-item payment-summary-total">
+                                    <div class="payment-summary-name">Transfer Mandiri</div>
+                                    <div class="payment-summary-price"> <p id="myText" onclick="copyToClipboard()" class="text-blue-500 cursor-pointer">
+                                       1290013618109 <i class="ri-file-copy-2-line"></i>
+                                    </p></div>
+                                </div>
+                            </div>
+                            <div class="payment-summary">
+                                <div class="payment-summary-item">
+                                    <div class="payment-summary-name">Diskon</div>
+                                    <div class="payment-summary-price">-</div>
+                                </div>
+                                <div class="payment-summary-divider"></div>
+                                <div class="payment-summary-item payment-summary-total">
+                                    <div class="payment-summary-name">Total</div>
+                                    <div class="payment-summary-price">Rp.80.000</div>
+                                </div>
+                                <div class="payment-summary-item payment-summary-total">
+                                   
+                                    <div class="faq-container">
+                                        <div class="faq-item">
+                                            <div class="faq-question"> Bagaimana cara melakukan pembayaran via transfer?</div>
+                                            <div class="icon-container"><i class="fas fa-chevron-right"></i></div>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <p>Untuk melakukan pembayaran via transfer, Anda perlu memiliki informasi rekening penerima, seperti nama bank, nomor rekening, dan mungkin kode bank. Gunakan layanan perbankan online atau datang langsung ke bank untuk mengirim transfer.</p>
+                                        </div>
+                                        <div class="faq-item">
+                                            <div class="faq-question">Bagaimana Menggunakan Mobile Banking</div>
+                                            <div class="icon-container"><i class="fas fa-chevron-right"></i></div>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <ol>
+                                                <li>Buka Aplikasi Mobile Banking Mandiri</li>
+                                                <li>Pilih Menu "Transfer"</li>
+                                                <li>Pilih Jenis Transfer</li>
+                                                <li> Masukkan Data Penerima</li>
+                                                <li> Masukkan Jumlah Transfer</li>
+                                                <LI>Konfirmasi Transaksi</LI>
+                                            </ol>
+                                        </div>
+                                        <div class="faq-item">
+                                            <div class="faq-question">Apakah aman melakukan pembayaran via transfer?</div>
+                                            <div class="icon-container"><i class="fas fa-chevron-right"></i></div>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <p>Ya, pembayaran via transfer dapat dianggap aman karena mengurangi risiko membawa uang tunai. Namun, pastikan untuk menyimpan informasi rekening dengan aman dan hanya berbagi dengan pihak yang terpercaya.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-right">
+                    <form action="" class="payment-form">
+                        <h1 class="payment-title">Payment Details</h1>
+                        
+                        <div class="payment-form-group">
+                            <input type="email" placeholder=" " class="payment-form-control" id="email">
+                            <label for="email" class="payment-form-label payment-form-label-required">Alamat Email</label>
+                        </div>
+                        <div class="payment-form-group">
+                            <input type="email" placeholder=" " class="payment-form-control" id="email">
+                            <label for="email" class="payment-form-label payment-form-label-required">Masukan Nama</label>
+                        </div>
+                        <div class="payment-form-group">
+                            <input type="text" placeholder=" " class="payment-form-control" id="card-number">
+                            <label for="card-number" class="payment-form-label payment-form-label-required">Whatsapp Aktif</label>
+                        </div>
+                        <div class="payment-form-group">
+                            <input type="file" placeholder=" " class="payment-form-control" id="my-file">
+                            <label for="email" class="payment-form-label payment-form-label-required">Bukti Transfer</label>
+                        </div>
+                        <!-- <div class="toast active">
+  
+                            <div class="toast-content">
+                              <i class="fas fa-solid fa-check check"></i>
+                          
+                              <div class="message">
+                                <span class="text text-1">Success</span>
+                                <span class="text text-2">Your changes has been saved</span>
+                              </div>
+                            </div>
+                            <i class="fa-solid fa-xmark close"></i>
+                 
+                            <div class="progress active"></div>
+                          </div>
+                           -->
+                        <button type="submit" class="payment-form-submit-button"><i class="ri-wallet-line"></i> Submit</button>
+                        
+                        <a href="../index.html" type="submit" class="exit-button" onclick="navigateToIndex()">
+                            <i class="ri-close-line"></i> Exit
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end: Payment -->
+    <script>
+        // change path
+        function navigateToIndex() {
+    // Lakukan navigasi ke ../index.html
+    window.location.href = '../index.html';
+}
+// show alert
+const button = document.querySelector(".payment-form-submit-button"),
+    toast = document.querySelector(".toast"),
+    closeIcon = document.querySelector(".close"),
+    progress = document.querySelector(".progress");
+
+let timer1, timer2;
+
+function showAlert() {
+    toast.classList.add("active");
+    progress.classList.add("active");
+
+    timer1 = setTimeout(() => {
+        toast.classList.remove("active");
+    }, 5000); // 1s = 1000 milliseconds
+
+    timer2 = setTimeout(() => {
+        progress.classList.remove("active");
+    }, 5300);
+}
+
+closeIcon.addEventListener("click", () => {
+    toast.classList.remove("active");
+
+    setTimeout(() => {
+        progress.classList.remove("active");
+    }, 300);
+
+    clearTimeout(timer1);
+    clearTimeout(timer2);
+});
+
+        function copyToClipboard() {
+          var copyText = document.getElementById("myText");
+          var textArea = document.createElement("textarea");
+          
+          // Set nilai textarea dengan teks yang akan disalin
+          textArea.value = copyText.textContent.trim();
+          
+          // Sembunyikan textarea agar tidak terlihat oleh pengguna
+          textArea.style.position = "fixed";
+          textArea.style.top = 0;
+          textArea.style.left = 0;
+          textArea.style.opacity = 0;
+          
+          // Tambahkan textarea ke body dokumen
+          document.body.appendChild(textArea);
+          
+          // Pilih teks dalam textarea
+          textArea.select();
+          
+          // Lakukan operasi salin
+          document.execCommand("copy");
+          
+          // Hapus textarea yang tidak terlihat
+          document.body.removeChild(textArea);
+          
+          // Berikan umpan balik kepada pengguna (opsional)
+          alert("Teks berhasil disalin: " + copyText.textContent);
+        }
+        const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+  const question = item.querySelector('.faq-question');
+  const answer = item.nextElementSibling;
+  const icon = item.querySelector('i');
+
+  item.addEventListener('click', () => {
+    faqItems.forEach(otherItem => {
+      if (otherItem !== item) {
+        const otherAnswer = otherItem.nextElementSibling;
+        const otherIcon = otherItem.querySelector('i');
+
+        otherAnswer.classList.remove('active');
+        otherIcon.classList.remove('active');
+        otherAnswer.style.maxHeight = "0";
+      }
+    });
+
+    answer.classList.toggle('active');
+    icon.classList.toggle('active');
+    if (answer.classList.contains('active')) {
+      answer.style.maxHeight = answer.scrollHeight + "px";
+    } else {
+      answer.style.maxHeight = "0";
+    }
+  });
+});
+      </script>
+</body>
+</html>
