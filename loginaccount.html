@@ -50,7 +50,7 @@
   <body class="h-full">
   ```
 -->
-    <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+    <!-- <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
       <div class="sm:mx-auto sm:w-full sm:max-w-sm">
         <img
           class="mx-auto h-20 w-auto"
@@ -115,19 +115,88 @@
           </div>
         </form>
       </div>
+    </div> -->
+    <!-- component -->
+
+    <div class="flex py-56 mx-auto container">
+      <!-- Left Pane -->
+      <div
+        class="hidden lg:flex items-center justify-center flex-1 bg-white text-black"
+      >
+        <div class="max-w-md text-center">
+          <img src="assets2/coding-studio-main-image-1.webp" alt="" />
+        </div>
+      </div>
+      <!-- Right Pane -->
+      <div class="w-full bg-gray-100 lg:w-1/2 flex items-center justify-center">
+        <div class="max-w-md w-full p-6">
+          <h1 class="text-3xl font-semibold mb-6 text-black text-center">
+            Log In
+          </h1>
+          <form
+            action="#"
+            method="POST"
+            class="space-y-4"
+            onsubmit="return validateLogin()"
+          >
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700"
+                >Email</label
+              >
+              <input
+                type="text"
+                id="email"
+                name="email"
+                class="mt-1 p-2 w-full border rounded-md focus:border-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 transition-colors duration-300"
+              />
+            </div>
+            <div>
+              <label
+                for="password"
+                class="block text-sm font-medium text-gray-700"
+                >Password</label
+              >
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="mt-1 p-2 w-full border rounded-md focus:border-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 transition-colors duration-300"
+              />
+            </div>
+            <div>
+              <button
+                type="submit"
+                class="w-full bg-black text-white p-2 rounded-md hover:bg-gray-800 focus:outline-none focus:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 transition-colors duration-300"
+              >
+                Sign In
+              </button>
+            </div>
+          </form>
+          <div class="mt-4 text-sm text-gray-600 text-center">
+            <p>
+              Belum punya akun?
+              <a href="regis.html" class="text-black hover:underline"
+                >Registrasi disini!</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
+
     <script>
       function validateLogin() {
         var email = document.getElementById("email").value;
         var password = document.getElementById("password").value;
 
-        // Ganti dengan kondisi login yang sesuai
-        if (email === "izzat@.com" && password === "password") {
-          // Jika login berhasil, arahkan ke halaman utama
-          window.location.href = "dashboard.html";
+        // Check if the username and password are correct (replace with your authentication logic)
+        if (email === "admin" && password === "admin") {
+          // Redirect to the dashboard page
+          window.location.href = "indexlogin.html";
+          return false; // prevent form submission
         } else {
-          // Jika login gagal, tampilkan pesan kesalahan
-          alert("Login gagal. Periksa kembali email dan password Anda.");
+          alert("Login failed. Please check your username and password.");
+          return false; // prevent form submission
         }
       }
     </script>
